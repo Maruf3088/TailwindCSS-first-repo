@@ -6,14 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
-<body class="bg-slate-700">
+<body class="bg-slate-700 relative">
+    <div
+        class="absolute top-20 pt-5 left-0 h-screen w-[100%] flex justify-center text-center bg-slate-300 hidden menuBar ">
+        <ul class="flex flex-col gap-4  ">
+            <li class="text-xl font-semibold cursor-pointer text-orange-500 duration-300 hover:text-white">Home</li>
+            <li class="text-xl font-semibold cursor-pointer text-wblackduration-300 hover:text-orange-500">About
+            </li>
+            <li class="text-xl font-semibold cursor-pointer text-black duration-300 hover:text-orange-500">Portfolio
+            </li>
+            <li class="text-xl font-semibold cursor-pointer text-black duration-300 hover:text-orange-500">Services
+            </li>
+            <li class="text-xl font-semibold cursor-pointer text-wblackduration-300 hover:text-orange-500">Blog</li>
+            <button
+                class="text-lg text-white px-6 py-2 font-semibold cursor-pointer rounded-lg bg-orange-500 duration-300 hover:bg-orange-700">Sign
+                Up</button>
+            <button
+                class="text-lg text-black px-6 py-2 font-semibold cursor-pointer rounded-lg bg-white  duration-300 hover:bg-gray-400 hover:text-white">Log
+                In</button>
+        </ul>
+    </div>
 
-    <div class="flex justify-between w-9/12 mx-auto h-[85px]  ">
-        <div class="text-2xl text-gray-50 font-bold flex items-center cursor-pointer">Start<span class="text-orange-500">Up</span>
+    <div class="flex justify-between w-[90%] mx-auto h-[85px]  ">
+        <div class="text-4xl text-gray-50 font-bold flex items-center cursor-pointer">Start<span
+                class="text-orange-500">Up</span>
         </div>
-        <ul class="flex gap-4 items-center">
+
+
+
+        <ul class="flex gap-4 items-center  hidden md:inline-block md:flex ">
             <li class="text-xl font-semibold cursor-pointer text-orange-500 duration-300 hover:text-white">Home</li>
             <li class="text-xl font-semibold cursor-pointer text-white duration-300 hover:text-orange-500">About</li>
             <li class="text-xl font-semibold cursor-pointer text-white duration-300 hover:text-orange-500">Portfolio
@@ -21,7 +45,8 @@
             <li class="text-xl font-semibold cursor-pointer text-white duration-300 hover:text-orange-500">Services</li>
             <li class="text-xl font-semibold cursor-pointer text-white duration-300 hover:text-orange-500">Blog</li>
         </ul>
-        <div class="flex items-center gap-4">
+
+        <div class="flex items-center gap-4 hidden md:inline-block md:flex">
             <button
                 class="text-lg text-white px-6 py-2 font-semibold cursor-pointer rounded-lg bg-orange-500 duration-300 hover:bg-orange-700">Sign
                 Up</button>
@@ -29,7 +54,26 @@
                 class="text-lg text-black px-6 py-2 font-semibold cursor-pointer rounded-lg bg-white  duration-300 hover:bg-gray-400 hover:text-white">Log
                 In</button>
         </div>
+        <i
+            class="ri-menu-3-fill flex items-center text-white text-xl font-semibold cursor-pointer menuToggle  md:hidden"></i>
     </div>
+
+    <main class="flex flex-col md:flex-row w-[90%] mx-auto md:h-[70vh]">
+        <div class="flex justify-center mt-5 md:w-[50%]">
+            <img src="./Images/me.svg" alt="" class="w-[100%] sm:w-[80%] md:w-[100%]">
+        </div>
+        <div class=" mt-4 flex flex-col justify-center gap-2 md:w-[50%] lg:gap-3">
+            <h1 class="text-orange-500 text-4xl font-bold lg:text-7xl">Hello<span class="text-white">!!</span></h1>
+            <h2 class="text-white text-2xl font-semibold lg:text-5xl">I am Maruf Islam</h2>
+            <p class="text-gray-400 mb-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum nisi vero alias
+                reprehenderit distinctio
+                dolores eligendi recusandae placeat qui voluptatem.</p>
+            <button
+                class="bg-orange-500 px-3 py-1 rounded-full text-sm self-start text-white font-semibold lg:text-lg ">Want
+                to
+                know More About Me <i class="ri-arrow-right-up-line"></i></button>
+        </div>
+    </main>
     <script src=" script.js"></script>
 </body>
 
